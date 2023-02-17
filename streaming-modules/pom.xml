@@ -9,17 +9,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<modules>
-		<module>space-manage</module>
-		<!--<module>ruoyi-gen</module>-->
-		<!--<module>ruoyi-job</module>-->
-		<!--<module>ruoyi-file</module>-->
+		<module>streaming-media</module>
 	</modules>
 
-	<artifactId>space-modules</artifactId>
+	<artifactId>streaming-modules</artifactId>
 	<packaging>pom</packaging>
 
 	<description>
-		space-modules业务模块
+		streaming-media业务模块
 	</description>
 
 </project>

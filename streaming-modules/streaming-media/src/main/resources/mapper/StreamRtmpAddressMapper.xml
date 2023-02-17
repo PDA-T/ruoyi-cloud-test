@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.streaming.media.mapper.StreamRtmpAddressMapper">
+  <resultMap id="BaseResultMap" type="com.streaming.media.domain.StreamRtmpAddress">
+    <!--@mbg.generated-->
+    <!--@Table stream_rtmp_address-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="stream" jdbcType="LONGVARCHAR" property="stream" />
+    <result column="url" jdbcType="LONGVARCHAR" property="url" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, stream, url
+  </sql>
+</mapper>
