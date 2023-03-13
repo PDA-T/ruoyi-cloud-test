@@ -9,6 +9,6 @@ import org.springframework.context.annotation.Configuration;
  * @since version-1.0
  */
 @Configuration
-@MapperScan({"com.seata.order.domain"})
+@MapperScan({"com.seata.order.mapper"})
 public class MyBatisConfig {
 }
