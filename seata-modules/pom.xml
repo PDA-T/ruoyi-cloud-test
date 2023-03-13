@@ -12,7 +12,7 @@
 		<module>seata-order-service</module>
 	</modules>
 
-	<artifactId>order-modules</artifactId>
+	<artifactId>seata-modules</artifactId>
 	<packaging>pom</packaging>
 
 	<description>
