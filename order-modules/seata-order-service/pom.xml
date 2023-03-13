@@ -43,17 +43,6 @@
 		<dependency>
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-seata</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>seata-all</groupId>
-					<artifactId>io.seata</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>io.seata</groupId>
-			<artifactId>seata-all</artifactId>
-			<version>1.6.1</version>
 		</dependency>
 
 		<!--feign-->

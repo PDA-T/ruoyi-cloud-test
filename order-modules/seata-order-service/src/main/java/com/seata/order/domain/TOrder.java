@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @ToString
@@ -38,7 +40,7 @@ public class TOrder {
      * 金额
      */
     @TableField(value = "money")
-    private Long money;
+    private BigDecimal money;
 
     /**
      * 订单状态 0-创建 1-完结
