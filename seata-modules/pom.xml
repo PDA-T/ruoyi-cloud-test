@@ -10,7 +10,8 @@
 
 	<modules>
 		<module>seata-order-service</module>
-		<module>seata-storage-service/pox.xml</module>
+		<module>seata-storage-service</module>
+		<module>seata-account-service</module>
 	</modules>
 
 	<artifactId>seata-modules</artifactId>
