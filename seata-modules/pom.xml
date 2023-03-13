@@ -10,13 +10,14 @@
 
 	<modules>
 		<module>seata-order-service</module>
+		<module>seata-storage-service/pox.xml</module>
 	</modules>
 
 	<artifactId>seata-modules</artifactId>
 	<packaging>pom</packaging>
 
 	<description>
-		seata-order-service业务模块
+		seata-modules业务模块
 	</description>
 
 </project>
