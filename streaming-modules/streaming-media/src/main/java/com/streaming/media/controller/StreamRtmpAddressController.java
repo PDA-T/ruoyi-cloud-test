@@ -2,7 +2,7 @@ package com.streaming.media.controller;
 
 import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.streaming.media.domain.StreamRtmpAddress;
-import com.streaming.media.service.impl.StreamRtmpAddressService;
+import com.streaming.media.service.StreamRtmpAddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
