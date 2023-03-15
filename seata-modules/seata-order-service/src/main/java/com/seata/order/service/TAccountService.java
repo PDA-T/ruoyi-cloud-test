@@ -2,7 +2,7 @@ package com.seata.order.service;
 
 import com.ruoyi.common.core.web.domain.AjaxResult;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.math.BigDecimal;
@@ -22,7 +22,7 @@ public interface TAccountService {
 	 * @return com.ruoyi.common.core.web.domain.AjaxResult
 	 * @since version-1.0
 	 */
-	@PostMapping(value = "/account/decrease")
+	@PutMapping(value = "/account/decrease")
 	public AjaxResult decrease(@RequestParam("userId") Long userId,
 							   @RequestParam("money") BigDecimal money);
 }
