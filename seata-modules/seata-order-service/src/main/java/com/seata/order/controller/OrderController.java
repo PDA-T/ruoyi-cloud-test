@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 /**
  * @Date 2023/2/18 23:06
  * @Description 订单Controller
@@ -30,7 +32,8 @@ public class OrderController {
 	@ResponseBody
 	@GetMapping("/getAll")
 	public AjaxResult getAll(){
-		return AjaxResult.success(orderService.list());
+		List<TOrder> list = orderService.list();
+		return AjaxResult.success(list);
 	}
 
 	/**
