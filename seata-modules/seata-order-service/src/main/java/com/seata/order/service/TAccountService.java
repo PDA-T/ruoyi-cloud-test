@@ -12,7 +12,7 @@ import java.math.BigDecimal;
  * @Description 账户
  * @since version-1.0
  */
-@FeignClient(value = "seata-storage-service",contextId = "account")
+@FeignClient(value = "seata-account-service",contextId = "account")
 public interface TAccountService {
 
 	/**
