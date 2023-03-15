@@ -22,6 +22,18 @@ public class OrderController {
 	private TOrderService orderService;
 
 	/**
+	 * @Date 2023/3/15 11:20
+	 * @Description 获取全部订单
+	 * @return com.ruoyi.common.core.web.domain.AjaxResult
+	 * @since version-1.0
+	 */
+	@ResponseBody
+	@GetMapping("/getAll")
+	public AjaxResult getAll(){
+		return AjaxResult.success(orderService.list());
+	}
+
+	/**
 	 * @Date 2023/2/18 23:08
 	 * @Description 创建订单
 	 * @Param [order]
