@@ -4,12 +4,14 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.seata.order.service.TAccountService;
 import com.seata.order.service.TOrderService;
 import com.seata.order.service.TStorageService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.seata.order.mapper.TOrderMapper;
 import com.seata.order.domain.TOrder;
+import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
 @Service
@@ -30,6 +32,8 @@ public class TOrderServiceImpl extends ServiceImpl<TOrderMapper, TOrder> impleme
 	 * @since version-1.0
 	 */
 	@Override
+	@Transactional
+	@GlobalTransactional
 	public int create(TOrder order) {
 		log.info("-------->开始新建订单");
 		this.save(order);

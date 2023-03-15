@@ -10,6 +10,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.seata.account.domain.TAccount;
 import com.seata.account.mapper.TAccountMapper;
 import com.seata.account.service.TAccountService;
+import org.springframework.transaction.annotation.Transactional;
+
 @Slf4j
 @Service
 public class TAccountServiceImpl extends ServiceImpl<TAccountMapper, TAccount> implements TAccountService{
@@ -22,6 +24,7 @@ public class TAccountServiceImpl extends ServiceImpl<TAccountMapper, TAccount> i
 	 * @since version-1.0
 	 */
 	@Override
+	@Transactional
 	public int decrease(Long userId, BigDecimal money) {
 		// 查找用户
 		LambdaQueryWrapper<TAccount> accountQuery = Wrappers.<TAccount>lambdaQuery()

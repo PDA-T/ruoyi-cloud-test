@@ -9,6 +9,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.seata.storage.mapper.TStorageMapper;
 import com.seata.storage.domain.TStorage;
 import com.seata.storage.service.TStorageService;
+import org.springframework.transaction.annotation.Transactional;
+
 @Slf4j
 @Service
 public class TStorageServiceImpl extends ServiceImpl<TStorageMapper, TStorage> implements TStorageService{
@@ -21,6 +23,7 @@ public class TStorageServiceImpl extends ServiceImpl<TStorageMapper, TStorage> i
 	 * @since version-1.0
 	 */
 	@Override
+	@Transactional
 	public int decrease(Long productId, Integer count) {
 		// 当前商品
 		LambdaQueryWrapper<TStorage> storageQuery = Wrappers.<TStorage>lambdaQuery()
