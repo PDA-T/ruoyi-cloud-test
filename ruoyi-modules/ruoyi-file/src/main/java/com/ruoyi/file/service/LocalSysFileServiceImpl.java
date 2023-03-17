@@ -1,7 +1,6 @@
 package com.ruoyi.file.service;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import com.ruoyi.file.utils.FileUploadUtils;
@@ -11,7 +10,6 @@ import com.ruoyi.file.utils.FileUploadUtils;
  * 
  * @author ruoyi
  */
-@Primary
 @Service
 public class LocalSysFileServiceImpl implements ISysFileService
 {

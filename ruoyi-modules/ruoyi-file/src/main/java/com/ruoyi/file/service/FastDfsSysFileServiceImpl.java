@@ -2,6 +2,7 @@ package com.ruoyi.file.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import com.github.tobato.fastdfs.domain.fdfs.StorePath;
@@ -13,6 +14,7 @@ import com.ruoyi.common.core.utils.file.FileTypeUtils;
  * 
  * @author ruoyi
  */
+@Primary
 @Service
 public class FastDfsSysFileServiceImpl implements ISysFileService
 {
