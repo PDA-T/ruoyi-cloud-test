@@ -10,6 +10,7 @@
 
 	<modules>
 		<module>streaming-media</module>
+		<module>streaming-play</module>
 	</modules>
 
 	<artifactId>streaming-modules</artifactId>
