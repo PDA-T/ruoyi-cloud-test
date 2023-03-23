@@ -9,15 +9,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<modules>
-		<module>streaming-media</module>
-		<module>streaming-play</module>
+		<module>message-rabbit</module>
 	</modules>
 
-	<artifactId>streaming-modules</artifactId>
+	<artifactId>message-modules</artifactId>
 	<packaging>pom</packaging>
 
 	<description>
-		streaming-modules业务模块
+		message-modules模块
 	</description>
 
 </project>
